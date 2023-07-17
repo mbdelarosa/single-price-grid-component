@@ -39,7 +39,6 @@ body {
 
 .l-grid__card--join {
   background-color: white;
-  padding: 1.5rem 1.5rem 1.75rem 1.5rem;
   gap: 1.25rem;
 }
 
@@ -71,6 +70,7 @@ body {
 
 .card__copy {
   color: var(--grayish-blue);
+  margin-bottom: 0.5rem;
 }
 
 .subscription {
@@ -109,4 +109,28 @@ ul {
   margin: 0;
   padding: 0;
   color: var(--light-gray);
+}
+
+@media only screen and (min-width: 40rem) {
+  .l-grid {
+    max-width: 40rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .l-grid__card {
+    padding: 2.5rem;
+  }
+
+  .l-grid__card--join {
+    grid-column: 1 / span 2;
+  }
+
+  .card__copy {
+    font-size: 1rem;
+  }
+
+  .sign-up-btn {
+    padding: 0.75rem 1rem;
+    margin-top: auto;
+  }
 }
