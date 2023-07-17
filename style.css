@@ -1,0 +1,112 @@
+:root {
+  /* Primary */
+  --cyan: hsl(179, 62%, 43%);
+  --light-cyan: hsl(179, 47%, 52%);
+  --shadow-cyan: hsl(179, 62%, 38%);
+  --bright-yellow: hsl(71, 73%, 54%);
+
+  /* Neutral */
+  --light-gray: hsl(204, 43%, 93%);
+  --shadow-light-gray: hsl(206, 39%, 85%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray);
+  font-family: 'Karla', sans-serif;
+  font-size: 0.9rem;
+}
+
+.l-grid {
+  display: grid;
+  margin: 1.55rem;
+  border-radius: 0.35rem;
+  overflow: hidden;
+  box-shadow: 0 0.75rem 1rem 0.3rem var(--shadow-light-gray); /* h-offset v-offset blur spread color */
+}
+
+.l-grid__card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.l-grid__card--join {
+  background-color: white;
+  padding: 1.5rem 1.5rem 1.75rem 1.5rem;
+  gap: 1.25rem;
+}
+
+.l-grid__card--subscription {
+  background-color: var(--cyan);
+  color: white;
+}
+
+.l-grid__card--why-us {
+  background-color: var(--light-cyan);
+}
+
+.card__title {
+  color: white;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.card__title--join {
+  color: var(--cyan);
+  font-size: 1.35rem;
+}
+
+.card__subtitle {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--bright-yellow);
+}
+
+.card__copy {
+  color: var(--grayish-blue);
+}
+
+.subscription {
+  font-size: 1rem;
+}
+
+.subscription__pricing {
+  display: flex;
+  align-items: center;
+  gap: 1ch;
+  color: var(--light-gray);
+}
+
+.subscription__pricing--main {
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+}
+
+.sign-up-btn {
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: var(--bright-yellow);
+  padding: 1rem;
+  border-radius: 0.35rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem var(--shadow-cyan); /* h-offset v-offset blur spread color */
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--light-gray);
+}
