@@ -4,6 +4,7 @@
   --light-cyan: hsl(179, 47%, 52%);
   --shadow-cyan: hsl(179, 62%, 38%);
   --bright-yellow: hsl(71, 73%, 54%);
+  --bright-yellow-active: hsl(71, 73%, 47%);
 
   /* Neutral */
   --light-gray: hsl(204, 43%, 93%);
@@ -66,9 +67,10 @@ body {
   font-weight: 700;
   font-size: 1rem;
   color: var(--bright-yellow);
+  margin-bottom: 1rem;
 }
 
-.card__copy {
+.card__desc {
   color: var(--grayish-blue);
   margin-bottom: 0.5rem;
 }
@@ -104,6 +106,10 @@ body {
   cursor: pointer;
 }
 
+.sign-up-btn:hover, .sign-up-btn:focus {
+  background-color: var(--bright-yellow-active);
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -125,7 +131,16 @@ ul {
     grid-column: 1 / span 2;
   }
 
-  .card__copy {
+  .card__title--join {
+    font-size: 1.45rem;
+  }
+
+  .card__subtitle {
+    margin-bottom: 0.5rem;
+    font-size: 1.12rem;
+  }
+
+  .card__desc {
     font-size: 1rem;
   }
 
