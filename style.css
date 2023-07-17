@@ -27,7 +27,7 @@ body {
   margin: 1.55rem;
   border-radius: 0.35rem;
   overflow: hidden;
-  box-shadow: 0 0.75rem 1rem 0.3rem var(--shadow-light-gray); /* h-offset v-offset blur spread color */
+  box-shadow: 0 0.75rem 1rem 0.3rem var(--shadow-light-gray);
 }
 
 .l-grid__card {
@@ -100,7 +100,7 @@ body {
   padding: 1rem;
   border-radius: 0.35rem;
   overflow: hidden;
-  box-shadow: 0 0.5rem 1rem var(--shadow-cyan); /* h-offset v-offset blur spread color */
+  box-shadow: 0 0.5rem 1rem var(--shadow-cyan);
   cursor: pointer;
 }
 
